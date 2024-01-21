@@ -1,0 +1,394 @@
+
+body {  /* Corp de page */
+     background-image: url(../img/fond.jpg);
+    margin: 0;
+    padding: 100px 0 0 0;
+    height: 100vh;  /* <---- l'image va prendre 100% de la taille du body */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size:medium;
+    color:#fff;
+}
+
+a { color:#fff;text-decoration:none; 
+}
+
+a:hover { text-decoration: underline;
+}
+
+header {  /* en-tête */
+  position: relative;
+}
+
+main { 
+  justify-content: center;
+  text-align: center;
+  padding:0px;
+}
+
+/**********************/
+/******** NAV ******** /
+/**********************/
+  
+nav { 
+	position :fixed;
+	width:100%;
+	top:0;
+	display: flex;
+	text-align: center;
+	justify-content: center;
+	background-color: rgba(0, 0, 0, 0.3);
+	padding:20px 0;
+}
+
+nav div {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	gap: 20px;
+}
+  
+nav div a { 
+    vertical-align: middle;
+    font-weight:bolder;
+    flex-direction: column;
+    color: aliceblue;
+    text-decoration: none;
+    padding: 10px 25px 5px 25px;
+    font-size:medium;
+}
+
+nav a.achat {
+	border:2px solid #00eeff;
+	text-transform: uppercase;
+	background-color:rgba(0, 238, 255, 0.3);
+}
+
+nav a.logo { padding-top:0; 
+}
+
+.imagelogo {  /*Le logo */
+	display: inline-block;
+	width: 130px;
+}
+
+/**********************/
+/****** FOOTER ********/
+/**********************/
+  
+footer { 
+    text-align: center;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #140820;
+    color: white;
+    padding: 20px;
+    margin-top: auto;
+}
+
+.liensannexes {
+	list-style-type: none;
+}
+
+.liensannexes li {
+	display: inline-block;
+	padding:0 10px;
+}
+
+.reseauxsociaux {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	gap: 20px;
+}
+
+.reseauxsociaux div {
+	padding:20px 0;
+}
+
+.reseauxsociaux div img {
+	width:50px;
+	height: 50px;
+}
+
+
+/*********************/
+/*******PITCH*********/
+/*********************/
+
+.pitch {
+	padding-bottom:100px;
+}
+
+.titrepitch {	
+	margin-bottom:100px;
+}
+
+.pitch h1 {
+	font-size:100px;
+	font-weight: bold;
+	font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif";
+	color:#fff;
+	text-shadow: #1b4377 1px 0 10px;
+	padding:0;
+	margin-bottom:0;
+}
+
+.pitch h2, .titrepage h2 {
+	font-size:60px;
+	font-weight: bold;
+	font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif";
+	color:#fff;
+	text-shadow: #1b4377 1px 0 10px;
+	padding:0;
+	margin:0;
+	
+}
+
+.contenupitch{
+	padding:50px;
+	background-color: rgba(0, 0, 0, 0.3);
+	font-size:18px; 
+	border-radius: 20px;
+	width:70%;
+	margin:0 auto;
+}
+
+
+/****************************/
+/*********RECOMPENSE*********/
+/***************************/
+
+.recompenses {
+	
+	padding:50px 0;
+}
+
+.recompenses ul {
+	margin:0;
+	padding:0;
+}
+
+.recompenses ul li {
+	display: inline-block;
+	color:#fff;font-weight: bold;
+	width:33%;
+}
+
+.recompenses ul li p {
+	text-shadow: #1b4377 1px 0 10px;
+}
+.recompenses ul li img {
+	max-width: 300px;
+}
+
+
+
+/********************/
+/***** Galerie *****/
+/******************/
+.galerie {
+  display: flex;
+     flex-wrap: wrap;
+     padding: 5px;
+     justify-content: space-evenly;
+}
+.galerie div {
+  flex: 0 0 auto;
+  width: 33.33333333%;
+}
+.imgpaysage {
+  display: flex;
+  justify-content: space-between; 
+  align-items: center; 
+}
+
+
+.imgpaysage img {
+  max-width: 30%;
+  height: auto; 
+}
+
+
+
+
+@media screen and (max-width: 800px) { /*** <--- responsive ***/
+	body { padding-top: 200px; }
+	.recompenses ul li{ width:100%; }
+	.une {margin-bottom:50px;}
+	.une h1 { font-size:60px;}
+	.une h2 { font-size:30px;}
+	.contenupitch{
+		padding:30px;
+		font-size:16px; 
+		width:80%;
+	}
+	.titrepitch {
+    margin-bottom: 40px !important;
+	}
+}
+
+
+/*****************/
+/****** actu *****/
+/*****************/
+
+.actu {
+	background-color: #fff;
+	max-width: 800px;
+	width:50%;
+	margin:0 auto;
+	margin-bottom:50px;
+}
+
+.actu h2 { 
+	font-size:30px;
+	color:#000;
+	text-align: center;
+}
+
+.actu-date {
+	text-align: center;
+	font-size:12px;
+	color:#6A6A6A;
+}
+
+.actu-date a { color:#6A6A6A; 
+}
+
+.actu-visuel {
+	padding:20px 20px 0 20px;
+}
+
+.actu-visuel img {
+	width:100%;
+}
+
+.actu-texte {
+	color:#000;
+	text-align: justify;
+	padding:0 20px 20px 20px;
+}
+
+.listeactualites {
+	display: flex;
+	flex-wrap:wrap;
+	justify-content: center;
+	gap: 20px;
+}
+
+.listeactualites div {
+	width: 25%;
+}
+
+.listeactualites div img {
+	width:100%;
+}
+
+.listeimages {
+	display: flex;
+	flex-wrap:wrap;
+	justify-content: center;
+	gap: 20px;
+}
+.listeimages div {
+	width: 25%;
+}
+.listeimages div img {
+	width:100%;
+}
+
+.listeimages p {
+	font-size: x-large;
+	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+	color: rgb(255, 255, 255);
+}
+  
+main {
+    justify-content: center;
+    text-align: center;
+    padding: 0px;
+    margin-bottom: 20px;
+}
+
+.EnvieSavoirPlus {
+    font-size: 24px; 
+}
+
+.InscrivDMaint {
+    font-size: 24px; 
+	text-decoration: underline;
+}
+
+
+/* Mode Sombre */
+.Dark body {
+    background-color: #000; 
+    color: #fff; 
+}
+
+.Dark a {
+    color: #fff; 
+}
+
+.Dark a:hover {
+    text-decoration: underline;
+    color: #ccc; 
+}
+
+.Dark header {
+    background-color: rgba(0, 0, 0, 0.3); 
+}
+
+.Dark nav {
+    background-color: rgba(0, 0, 0, 0.3); 
+}
+
+.Dark nav a {
+    color: #fff; 
+}
+
+.Dark footer {
+    background-color: #140820; 
+    color: #fff;
+}
+
+.Dark .liensannexes a {
+    color: #fff; 
+}
+
+.Dark .actu {
+    background-color: #fff; 
+}
+
+.Dark .actu h2 {
+    color: #000; 
+}
+
+.Dark .actu-date {
+    color: #fff;
+}
+
+.Dark .actu-visuel {
+    background-color: #000; 
+}
+.Dark .actu-visuel img {
+    border-top-color: #000; 
+}
+
+.Dark .actu-texte {
+    background-color: #000; 
+    color: #fff;
+}
+
+.Dark .actu-texte h2 {
+    color: #fff; 
+    background-color: #000; 
+    border-top-color: #000; 
+}
+
+.Dark .actu-visuel img {
+    border-top: none; 
+}
